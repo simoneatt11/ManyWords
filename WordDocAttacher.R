@@ -1,4 +1,5 @@
 # Simone Attanasio - 20231107
+# the output will be a word document
 
 # packages needed
 install.packages("officer")
@@ -11,8 +12,11 @@ library(fs)
 library(readtext)
 library(dplyr)
 
-folder_path <- "/path/to/folder"
+#set as working directory the folder containing all your doc files
+setwd("path/to/folder")
+
 # Replace with the actual path to your folder
+folder_path <- "/path/to/folder"
 
 doc <- read_docx()
 # create an empty variable in R - the loop will append here
