@@ -1,0 +1,4 @@
+# Many Words
+
+A script that can append multiple word documents to a final doc.
+The final doc will contain filename 1, filecontent 1, filename 2, filecontent 2 and so on. 
