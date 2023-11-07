@@ -11,7 +11,7 @@ library(fs)
 library(readtext)
 library(dplyr)
 
-folder_path <- "/Users/simoneattanasio/Downloads/Scritti/test"
+folder_path <- "/path/to/folder"
 # Replace with the actual path to your folder
 
 doc <- read_docx()
