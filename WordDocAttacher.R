@@ -1,11 +1,11 @@
 # Simone Attanasio - 20231107
-# doublecheck packages that are needed
-# doublecheck steps that are correct - write a good documentation
 
+# packages needed
 install.packages("officer")
 install.packages("fs")
 install.packages("readtext")
 
+# activate packages
 library(officer)
 library(fs)
 library(readtext)
@@ -20,7 +20,7 @@ doc <- read_docx()
 file_list <- list.files(folder_path, pattern = "\\.(docx|doc)$", full.names = TRUE)
 # create a variable containing the list of files present in the directory "folder_path"
 
-# explain the loop ...
+# go through every file in the file_list and append everything in doc
 for (file_path in file_list) {
   content <- readtext(file_path)
 
@@ -34,5 +34,8 @@ for (file_path in file_list) {
     body_add("\n\n")
 }
 
-final_doc_path <- "Final_doc.docx"  # Replace with the desired file path and filename
+# create a new document in a file path with a new file name
+final_doc_path <- "/path/to/folder/Final_doc.docx"  #Replace with the desired file path and filename
+
+# print doc in the final document
 print(doc, target = final_doc_path)
