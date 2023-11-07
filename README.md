@@ -6,6 +6,9 @@ This short R script can help in appending several documents present in a folder 
 
 [WordDocAttacher](https://github.com/simoneatt11/ManyWords/blob/main/WordDocAttacher.R)
 
+-
+-
+-
 
 _### To do_
 - How to attach several documents located in multiple subfolders
