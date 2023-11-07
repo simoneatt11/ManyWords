@@ -37,5 +37,5 @@ for (file_path in file_list) {
 # try this tomorrow -> doc <- doc %>%
 # -> body_add("File Name: ", file_name, "\nFile Content:\n", content$text, "\n\n")
 
-final_doc_path <- "Tutto_2018.docx"  # Replace with the desired file path
+final_doc_path <- "Final_doc.docx"  # Replace with the desired file path and filename
 print(doc, target = final_doc_path)
